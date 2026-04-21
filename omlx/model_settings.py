@@ -107,7 +107,7 @@ class ModelSettings:
     # DFlash (block diffusion speculative decoding)
     dflash_enabled: bool = False
     dflash_draft_model: Optional[str] = None  # Path/repo for DFlash draft checkpoint
-    dflash_draft_quant_bits: Optional[int] = None  # Draft model quantization (None=bf16, 4)
+    dflash_draft_quant_bits: Optional[int] = None  # Draft model quantization (None=bf16/fp16, 4)
 
     # Model management flags
     is_pinned: bool = False
